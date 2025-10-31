@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: custom-shell-script
+        name: Custom Shell Script
+        entry: .git/hooks/pre-push.TEST
+        language: script
+        pass_filenames: false
+        stages: [pre-push]
